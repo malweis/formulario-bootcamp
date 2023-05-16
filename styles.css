@@ -1,0 +1,38 @@
+form, input{
+   background-color: #f5ebeb;
+   color: #53455e;
+}
+input{
+    border-color: #795366 ;
+}
+
+.formulario{
+    border-color: #9B8EA4;
+
+}
+.formulario > div {
+    width: 100%;
+}
+.checkbox{
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    border: 2px solid #789FB6;
+    position: relative;
+}
+.boton{
+    background-color:#795366 ;
+    color: whitesmoke;
+}
+.contenedor{
+    width: 40%;
+}
+
+.error {
+    border-color: red;
+  }
+  
+  .error:focus {
+    outline-color: red;
+  }
+  

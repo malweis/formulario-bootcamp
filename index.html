@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body class="flex justify-center items-center h-screen p-0 m-0  ">
+    <div class="contenedor">
+        <form>
+            <div class="border-4  rounded-lg flex flex-col  font-light text-lg gap-5 p-2 formulario h-[30px]">
+                <div class="flex flex-col gap-2">
+                    <label for="cuentaC">Cuenta Corriente</label>
+                    <select name="cuentaC" id="cuenta-credito" class="border-2 rounded-lg">
+                        <option value="">Escoja una cuenta</option>
+                        <option value="131233-4">131233-4</option>
+                        <option value="213123-4">213123-4</option>
+                        <option value="213123-2">213123-2</option>
+                    </select>
+
+                </div>
+                <div class="flex gap-20 justify-evenly">
+                    <div class="flex flex-col gap-3 w-full">
+                        <div class="flex">
+                            <div class="flex flex-col">
+                                <label for="nroDeCuenta">Numero de cuenta</label>
+                                <input type="text" name="nroDeCuenta" class="border-b-2 w-full">
+                            </div>
+                            <div class="flex flex-col items-center flex-1">
+                                <label for="nroDeCuenta">Guardar</label>
+                                <input type="checkbox" name="guardar" class="checkbox ">
+                            </div>
+                        </div>
+                        <label for="banco">Banco</label>
+                        <select name="banco" id="banco" class="border-2 rounded-lg">
+                            <option value="">Escoja un banco</option>
+                            <option value="1">BNF</option>
+                            <option value="2">Itau</option>
+                            <option value="3">Atlas</option>
+                        </select>
+                        <label for="tipoDoc">Tipo de documento</label>
+                        <select name="tipoDoc" id="tipoDocumento" class="border-2 rounded-lg">
+                            <option value="">Escoja un tipo de Documento</option>
+                            <option value="1">CI</option>
+                            <option value="2">Pasaporte</option>
+                            <option value="3">DNI</option>
+
+                        </select>
+                    </div>
+                    <div class="flex flex-col gap-2 w-full">
+                        <label for="alias">Alias</label>
+                        <input type="text" name="alias" id="alias" class="border-b-2  w-full">
+                        <label for="denominacion">Denominacion</label>
+                        <input type="text" name="denominacion" id="denom" class="border-b-2  w-full">
+                        <label for="nroDoc">Numero de Documento</label>
+                        <input type="text" name="nroDoc" id="nroDocumento" class="border-b-2  w-full">
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label for="domicilio">Domicilio</label>
+                    <input type="text" name="domicilio" id="direccion" class="border-b-2  w-full">
+                    <label for="localidad">Localidad</label>
+                    <input type="text" name="localidad" id="barrio" class="border-b-2  w-full mb-2">
+                    <button type="submit"
+                        class="boton w-40  transition duration-500 transform hover:-translate-y-1 inline-block text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer self-center">
+                        Enviar
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

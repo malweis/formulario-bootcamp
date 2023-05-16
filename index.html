@@ -11,9 +11,9 @@
 </head>
 
 <body class="flex justify-center items-center h-screen p-0 m-0  ">
-    <div class="contenedor">
-        <form>
-            <div class="border-4  rounded-lg flex flex-col  font-light text-lg gap-5 p-2 formulario h-[30px]">
+    <div class="contenedor rounded-lg ">
+        <form class="rounded-lg ">
+            <div class="border-4 rounded-lg flex flex-col font-light text-lg gap-5 p-2 formulario flex-wrap sm:flex-row ">
                 <div class="flex flex-col gap-2">
                     <label for="cuentaC">Cuenta Corriente</label>
                     <select name="cuentaC" id="cuenta-credito" class="border-2 rounded-lg">
@@ -24,12 +24,12 @@
                     </select>
 
                 </div>
-                <div class="flex gap-20 justify-evenly">
+                <div class="xl:flex gap-20 justify-evenly">
                     <div class="flex flex-col gap-3 w-full">
                         <div class="flex">
                             <div class="flex flex-col">
                                 <label for="nroDeCuenta">Numero de cuenta</label>
-                                <input type="text" name="nroDeCuenta" class="border-b-2 w-full">
+                                <input type="text" name="nroDeCuenta" class="border-b-2 w-full sm:w-auto">
                             </div>
                             <div class="flex flex-col items-center flex-1">
                                 <label for="nroDeCuenta">Guardar</label>
@@ -54,18 +54,18 @@
                     </div>
                     <div class="flex flex-col gap-2 w-full">
                         <label for="alias">Alias</label>
-                        <input type="text" name="alias" id="alias" class="border-b-2  w-full">
+                        <input type="text" name="alias" id="alias" class="border-b-2 w-full sm:w-auto">
                         <label for="denominacion">Denominacion</label>
-                        <input type="text" name="denominacion" id="denom" class="border-b-2  w-full">
+                        <input type="text" name="denominacion" id="denom" class="border-b-2 w-full sm:w-auto">
                         <label for="nroDoc">Numero de Documento</label>
-                        <input type="text" name="nroDoc" id="nroDocumento" class="border-b-2  w-full">
+                        <input type="text" name="nroDoc" id="nroDocumento" class="border-b-2 w-full sm:w-auto">
                     </div>
                 </div>
                 <div class="flex flex-col gap-2">
                     <label for="domicilio">Domicilio</label>
-                    <input type="text" name="domicilio" id="direccion" class="border-b-2  w-full">
+                    <input type="text" name="domicilio" id="direccion" class="border-b-2 w-full sm:w-auto">
                     <label for="localidad">Localidad</label>
-                    <input type="text" name="localidad" id="barrio" class="border-b-2  w-full mb-2">
+                    <input type="text" name="localidad" id="barrio" class="border-b-2 w-full sm:w-auto mb-2">
                     <button type="submit"
                         class="boton w-40  transition duration-500 transform hover:-translate-y-1 inline-block text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer self-center">
                         Enviar

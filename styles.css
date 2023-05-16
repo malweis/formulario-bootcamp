@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 form, input{
    background-color: #f5ebeb;
    color: #53455e;
@@ -25,7 +29,9 @@ input{
     color: whitesmoke;
 }
 .contenedor{
+    @media only screen and (min-width: 1200px) {
     width: 40%;
+      }
 }
 
 .error {
@@ -35,4 +41,5 @@ input{
   .error:focus {
     outline-color: red;
   }
+  
   
